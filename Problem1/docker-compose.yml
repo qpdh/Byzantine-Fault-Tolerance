@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  commander:
+    image: qpdh1924/p1_commander
+    container_name: p1_commander_con
+    ports:
+      - 5000:5000
+
+  general1:
+    image: qpdh1924/p1_general1
+    container_name: p1_general1_con
+    ports:
+      - 5001:5001
+
+  general2:
+    image: qpdh1924/p1_general2
+    container_name: p1_general2_con
+    ports:
+      - 5002:5002
+
+  general3:
+    image: qpdh1924/p1_general3
+    container_name: p1_general3_con
+    ports:
+      - 5003:5003
