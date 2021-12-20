@@ -10,30 +10,23 @@
 
 이미지, 컨테이너 이름, 포트 번호의 쌍은 다음과 같습니다.
 
- 
+ |이미지 명|컨테이너 명|포트번호|
+|------|---|---|
+|p1_commander|p1_commander_con|5000|
+|p1_general1|p1_general1|5001|
+|p1_general2|p1_general2|5002|
+|p1_general3|p1_general3|5003|
 
-p1_commander, p1_commander_con, 5000
 
-p1_general1, p1_general1, 5001
-
-p1_general2, p1_general2, 5002
-
-p1_general3, p1_general3, 5003
-
- 
-
-p2_commander, p2_commander_con, 5000
-
-p2_general1, p2_general1, 5001
-
-p2_general2, p2_general2, 5002
-
-p2_general3, p2_general3, 5003
-
-p2_general3, p2_general4, 5004
+ |이미지 명|컨테이너 명|포트번호|
+|------|---|---|
+|p2_commander|p2_commander_con|5000|
+|p2_general1|p2_general1|5001|
+|p2_general2|p2_general2|5002|
+|p2_general3|p2_general3|5003|
+|p2_general3|p2_general4|5004|
 
  
-
 결과 값은 
 
 curl http://localhost:5000/ping
