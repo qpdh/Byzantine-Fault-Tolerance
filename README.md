@@ -41,6 +41,7 @@ curl http://localhost:5000/ping
 을 통해 확인하였습니다.
 ![케이스 1번](https://user-images.githubusercontent.com/74190329/146796470-e7e490dd-1a75-4c38-af36-08f00698b503.png)
 
-![케이스 1번](https://user-images.githubusercontent.com/74190329/146796477-4cafe1f2-1a82-4183-b806-5a41cd3eda84.png)
+![케이스 2번](https://user-images.githubusercontent.com/74190329/146796527-14abbcfa-22b4-4488-a55a-9e01eed2f166.png)
+
 
 
