@@ -38,16 +38,9 @@ p2_general3, p2_general4, 5004
 
 curl http://localhost:5000/ping
 
-을 통해 확인하였으며, 결과 이미지 파일도 같이 첨부합니다!
+을 통해 확인하였습니다.
+![케이스 1번](https://user-images.githubusercontent.com/74190329/146796470-e7e490dd-1a75-4c38-af36-08f00698b503.png)
 
- 
+![케이스 1번](https://user-images.githubusercontent.com/74190329/146796477-4cafe1f2-1a82-4183-b806-5a41cd3eda84.png)
 
-docker-compose.yml 파일은
 
-압축파일을 해제하면
-
-Problem1/docker-compose.yml
-
-Problem2/docker-compose.yml
-
-에 각각 존재합니다.
