@@ -1,5 +1,6 @@
-from flask import Flask
+from flask import Flask, request
 import requests
+from collections import Counter
 
 app = Flask(__name__)
 
@@ -18,7 +19,6 @@ def do_ping():
 
     response_result = []
     for general_con, general_port in zip(general_con_list, general_con_port):
-        response = ' '
         try:
             response = requests.get('http://' + general_con + ':' + general_port + '/pong?token=' + ping)
         except requests.exceptions.RequestException as e:
@@ -27,12 +27,19 @@ def do_ping():
 
         response_result.append(response.text)
 
-    result = str.join('\n', response_result)
+    result = '''<h2>====컨테이터가 가진 토큰====</h2>
+<p>p2_general1_con:김동현</p>
+<p>p2_general2_con:김동현</p>
+<p>p2_general3_con:FAULT // 비잔틴</p>
+<h2>====각 컨테이너가 합의 후 판단한 메시지====</h2>
+    '''
+    result += str.join('\n', response_result)
 
-    if result.count('홍길동') * 3 + 1 <= len(general_con_list):
-        result += '\n합의 가능'
+    result += '<h2>====결과====</h2>'
+    if result.count('FAULT') * 3 + 1 <= len(general_con_list):
+        result += '\n<p>합의 가능</p>'
     else:
-        result += '\n합의 불가능'
+        result += '\n<p>합의 불가능</p>'
 
     print(result)
 
